@@ -2,6 +2,7 @@ body{
     background-color: #FFC107;
     margin: 0;
     font-family: Helvetica, Sans-Serif;
+    text-align: center;
 }
 .navbar{
     padding: 0;
@@ -39,8 +40,8 @@ body{
 }
 
 #logoflia{
-    width: 340px;
-    height: 300px;
+    width: 293px;
+    height: 260px;
 }
 
 #diezAños{
@@ -66,6 +67,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 70px;
 }
 
 .slider{
@@ -101,6 +103,21 @@ body{
     font-family: monospace;
     font-weight: bold;
     align-self: center;
+}
+
+.container-descuento{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0px 3%;
+    font-size: 20px;
+}
+
+#festeja{
+    color: #FFC107;
+    font-size: 36px;
+    padding: 0px 170px;
 }
 
 label.error
