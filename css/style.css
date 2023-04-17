@@ -28,14 +28,14 @@ body{
 }
 #somosFlia{
     padding: 0;
-    margin-top: 120px;
-    margin-bottom: 100px;
+    margin-top: 150px;   
+    height: 800px;
 }
 #logoflia{
     margin-bottom: 100px;
 }
 #somosFlia h1{
-    margin-bottom: 100px;
+    margin-bottom: 50px;
 }
 
 #logoflia{
@@ -110,18 +110,32 @@ label.error
 
 /*abajo de 576.... */
 @media only screen and (max-width: 576px) {
-    
+    #somosFlia{
+        padding: 0;
+        margin-top: 50px;   
+        height: 700px;
+    }
+    #logoflia{
+        width: 60%;
+        height: 30%;
+    }
+
     #formDescuento {
         background-color: #E3E3E3;
         padding: 30px;
         margin-top: 15px;
         margin-bottom: 30px;
         }
-        #btnEnviarDescuento{
+    #btnEnviarDescuento{
              background-color: black;
              color: white;
              width: 50%;             
-        }   
+        }  
+       
+        .logoNav{
+            width: 40px;
+            height: 40px;
+        }    
 
 
 }
