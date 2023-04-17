@@ -5,6 +5,10 @@ body{
     margin: 0;
     font-family: Helvetica, Sans-Serif;
 }
+h2,h4{font-family: 'Raleway', sans-serif;font-weight: 700;}
+h3{font-family: 'Raleway', sans-serif;font-weight: 600; font-style: italic;}
+p{font-family: 'Roboto', sans-serif;}
+
 .navbar{
     padding: 0;
 }
@@ -37,6 +41,7 @@ body{
     height: 300px;   
 }
 #somosFlia h1{
+    font-family: 'Raleway', sans-serif;
     margin-bottom: 50px;
 }
 
@@ -45,7 +50,10 @@ body{
     color: #FFC107;
     padding: 20px;
 }
-
+#btnEnviarDescuento{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;          
+}
 #obteneDescuento{
     background-color: white;
 }
@@ -58,6 +66,10 @@ body{
 .bold{
     font-weight: bold;
 }
+.btnNavLg{font-family: 'Roboto', sans-serif;
+    font-weight: 700; }
+.btnNavSm{font-family: 'Roboto', sans-serif;
+    font-weight: 700; }
 
 .container-carusel{
     display: flex;
@@ -139,6 +151,7 @@ label.error
         padding: 30px;
         margin-top: 15px;
         margin-bottom: 30px;
+        font-family: 'Raleway', sans-serif;
         }
     #btnEnviarDescuento{
              background-color: black;
@@ -152,6 +165,7 @@ label.error
         }
         #formContacto{
             padding: 20px;
+            font-family: 'Raleway', sans-serif;
                    }      
        
         .logoNav{
@@ -195,6 +209,7 @@ label.error
          margin-right: 40px;
          margin-left: 40px;
          padding-bottom: 50px;
+         font-family: 'Raleway', sans-serif;
          }
      #btnEnviarDescuento{
               background-color: black;
@@ -210,6 +225,7 @@ label.error
              padding: 20px;
              margin-right: 30px;
              margin-left: 30px;
+             font-family: 'Raleway', sans-serif;
                     }      
         
          .logoNav{
