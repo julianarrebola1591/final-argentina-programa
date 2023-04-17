@@ -112,12 +112,22 @@ label.error
 @media only screen and (max-width: 576px) {
     #somosFlia{
         padding: 0;
-        margin-top: 50px;   
+        margin-top: 120px;   
         height: 700px;
+    }
+    #somosFlia h1{
+        margin: 8px;
     }
     #logoflia{
         width: 60%;
         height: 30%;
+    }
+    #diezAños {
+        padding: 0px;        
+        margin-top: 15px;
+      }
+    #containerProductos{
+        margin-bottom: 80px;
     }
 
     #formDescuento {
@@ -130,12 +140,16 @@ label.error
              background-color: black;
              color: white;
              width: 50%;             
-        }  
+        }
+        #formContacto{
+            padding: 20px;
+                   }      
        
         .logoNav{
             width: 40px;
             height: 40px;
-        }    
+        }
+        .txtDescripcion{margin:15px;}   
 
 
 }
