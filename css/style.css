@@ -236,11 +236,13 @@ label.error
 }
 /*arriba de 7682.... */
 @media only screen and (min-width: 768px) {
-    #formDescuento {
-       
+    #logoflia{
+        width:40%;
+        height: 35%
+     }
+    #formDescuento {       
         margin-right: 100px;
-        margin-left: 100px;
-       
+        margin-left: 100px;       
         }
     #formContacto {
         margin-right: 0px;
@@ -257,19 +259,23 @@ label.error
 
 /*arriba de 992.... */
 @media only screen and (min-width: 992px) {
+    #logoflia{
+        width:250px;
+        height: 200px;
+     }
     #formDescuento {
         margin-right: 0px;
         margin-left: 0px;
       }
        .btnNavSm{display: none;}
         .btnNavLg{display: block;}
-
         .txtDescuento{width:80%; margin: 0 auto;}
+        .textosDescuento{margin-top: 150px;}
 }
 
 /*arriba de 1400.... */
 @media only screen and (min-width: 1200px) {      
-
+     
     .saltolg{display: block;}
         
 }
