@@ -132,10 +132,7 @@ label.error
     #containerProductos{
         margin-bottom: 80px;
     }
-    #seccionFormulario{
-        flex-direction: column-reverse;
-    }
-    #formDescuento {
+       #formDescuento {
         background-color: #E3E3E3;
         padding: 30px;
         margin-top: 15px;
@@ -147,6 +144,9 @@ label.error
              width: 70%; 
              padding: 10px;
              box-shadow: 0px 5px 15px black          
+        }
+        #seccionFormularioContacto{
+            flex-direction: column-reverse;
         }
         #formContacto{
             padding: 20px;
@@ -165,10 +165,7 @@ label.error
 }
 /*arriba de 576.... */
 @media only screen and (min-width: 576px) {
-    #seccionFormulario{
-        flex-direction: column-reverse;
-    }
-    #formDescuento {
+        #formDescuento {
         background-color: #E3E3E3;
         padding: 30px;
         margin-top: 15px;
@@ -178,13 +175,16 @@ label.error
             background-color: black;
             color: white;
             width: 50%;             
-       }       
+       }
+       #seccionFormularioContacto{
+        flex-direction: column-reverse;
+    }       
        .btnNavSm{display: block;}
         .btnNavLg{display: none;}
 }
 /*arriba de 7682.... */
 @media only screen and (min-width: 768px) {
-    #seccionFormulario{
+    #seccionFormularioContacto{
         flex-direction: row;
     }  
 }
