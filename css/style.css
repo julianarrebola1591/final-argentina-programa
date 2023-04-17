@@ -128,9 +128,7 @@ label.error
        display: flex;
        flex-direction: column;
        justify-content: center;  
-        height: 700px;
-        margin: 0;
-        padding: 0;
+        height: 700px;        
     }
     #somosFlia h1{
         margin: 8px;
@@ -183,9 +181,7 @@ label.error
         display: flex;
         flex-direction: column;
         justify-content: center;  
-         height: 700px;
-         margin: 0;
-         padding: 0;
+         height: 700px;        
      }
      #somosFlia h1{
          margin: 8px;
