@@ -88,6 +88,11 @@ body{
     border-radius: 10px;
 }
 
+i.fa-brands {
+    color: black;
+    margin: 5px;
+  }
+
 #next, #prev{
     color: #fff;
     background-color: transparent;
@@ -149,7 +154,8 @@ label.error
             width: 40px;
             height: 40px;
         }
-        .txtDescripcion{margin:15px;}   
+        .txtDescripcion{margin:15px;}
+        .iconosRedes{width: 40px;height: 40px;}
 
 
 }
