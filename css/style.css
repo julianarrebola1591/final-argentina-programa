@@ -156,6 +156,8 @@ label.error
         }
         .txtDescripcion{margin:15px;}
         .iconosRedes{width: 30px;height: 30px;margin: 5px;}
+        .btnNavSm{display: block;}
+        .btnNavLg{display: none;}
 
 
 }
@@ -171,8 +173,20 @@ label.error
             background-color: black;
             color: white;
             width: 50%;             
-       }     
+       }       
+       .btnNavSm{display: block;}
+        .btnNavLg{display: none;}
+}
+/*arriba de 7682.... */
+@media only screen and (min-width: 768px) {
+     
+}
 
+/*arriba de 992.... */
+@media only screen and (min-width: 992px) {
+       
+       .btnNavSm{display: none;}
+        .btnNavLg{display: block;}
 }
 
 /*arriba de 1400.... */
