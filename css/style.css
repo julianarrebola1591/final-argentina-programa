@@ -1,9 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,700&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+/*font-family: 'Raleway', sans-serif; font-family: 'Roboto', sans-serif;*/
 body{
     background-color: #FFC107;
     margin: 0;
     font-family: Helvetica, Sans-Serif;
     text-align: center;
 }
+h2,h4{font-family: 'Raleway', sans-serif;font-weight: 700;}
+h3{font-family: 'Raleway', sans-serif;font-weight: 600; font-style: italic;}
+p{font-family: 'Roboto', sans-serif;}
+
 .navbar{
     padding: 0;
 }
@@ -28,20 +34,16 @@ body{
     width: 100%;
 }
 #somosFlia{
-    padding: 0;
-    margin-top: 120px;
-    margin-bottom: 100px;
+    padding: 0;      
+    height: 800px;
 }
-#logoflia{
-    margin-bottom: 100px;
-}
-#somosFlia h1{
-    margin-bottom: 100px;
-}
-
 #logoflia{
     width: 293px;
-    height: 260px;
+    height: 260px;   
+}
+#somosFlia h1{
+    font-family: 'Raleway', sans-serif;
+    margin-bottom: 50px;
 }
 
 #diezAños{
@@ -49,7 +51,10 @@ body{
     color: #FFC107;
     padding: 20px;
 }
-
+#btnEnviarDescuento{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;          
+}
 #obteneDescuento{
     background-color: white;
 }
@@ -62,6 +67,10 @@ body{
 .bold{
     font-weight: bold;
 }
+.btnNavLg{font-family: 'Roboto', sans-serif;
+    font-weight: 700; }
+.btnNavSm{font-family: 'Roboto', sans-serif;
+    font-weight: 700; }
 
 .container-carusel{
     display: flex;
@@ -95,6 +104,11 @@ body{
     border-radius: 10px;
 }
 
+i.fa-brands {
+    color: black;
+    margin: 5px;
+  }
+
 #next, #prev{
     color: #fff;
     background-color: transparent;
@@ -127,40 +141,158 @@ label.error
 
 /*abajo de 576.... */
 @media only screen and (max-width: 576px) {
-    
-    #formDescuento {
+    #somosFlia{
+       display: flex;
+       flex-direction: column;
+       justify-content: center;  
+        height: 700px;        
+    }
+    #somosFlia h1{
+        margin: 8px;
+    }
+    #logoflia{
+        width: 60%;
+        height: 30%;
+    }
+    #diezAños {
+        padding: 0px;        
+        margin-top: 15px;
+      }
+    #containerProductos{
+        margin-bottom: 80px;
+    }
+       #formDescuento {
         background-color: #E3E3E3;
         padding: 30px;
         margin-top: 15px;
         margin-bottom: 30px;
+        font-family: 'Raleway', sans-serif;
         }
-        #btnEnviarDescuento{
+    #btnEnviarDescuento{
              background-color: black;
              color: white;
-             width: 50%;             
-        }   
-
-
+             width: 70%; 
+             padding: 10px;
+             box-shadow: 0px 5px 15px black          
+        }
+        #seccionFormularioContacto{
+            flex-direction: column-reverse;
+        }
+        #formContacto{
+            padding: 20px;
+            font-family: 'Raleway', sans-serif;
+                   }      
+       
+        .logoNav{
+            width: 40px;
+            height: 40px;
+        }
+        .txtDescripcion{margin:15px;}
+        .iconosRedes{width: 30px;height: 30px;margin: 5px;}
+        .btnNavSm{display: block;}
+        .btnNavLg{display: none;}
+        .saltolg{display: none;}
 }
 /*arriba de 576.... */
 @media only screen and (min-width: 576px) {
-    #formDescuento {
-        background-color: #E3E3E3;
-        padding: 30px;
-        margin-top: 15px;
-        margin-bottom: 30px;
+    #somosFlia{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;  
+         height: 700px;        
+     }
+     #somosFlia h1{
+         margin: 8px;
+     }
+     #logoflia{
+        width: 50%;
+        height: 35%
+     }
+     #diezAños {
+         padding: 0px;        
+         margin-top: 15px;
+       }
+     #containerProductos{
+         margin-bottom: 80px;
+     }
+        #formDescuento {
+         background-color: #E3E3E3;
+         padding: 30px;
+         margin-top: 15px;
+         margin-bottom: 30px;
+         margin-right: 40px;
+         margin-left: 40px;
+         padding-bottom: 50px;
+         font-family: 'Raleway', sans-serif;
+         }
+     #btnEnviarDescuento{
+              background-color: black;
+              color: white;
+              width: 70%; 
+              padding: 10px;
+              box-shadow: 0px 5px 15px black          
+         }
+         #seccionFormularioContacto{
+             flex-direction: column-reverse;
+         }
+         #formContacto{
+             padding: 20px;
+             margin-right: 30px;
+             margin-left: 30px;
+             font-family: 'Raleway', sans-serif;
+                    }                   
+             .logoNav{
+             width: 40px;
+             height: 40px;
+         }
+         .txtDescripcion{margin:30px;}
+         .iconosRedes{width: 30px;height: 30px;margin: 5px;}
+         .btnNavSm{display: block;}
+         .btnNavLg{display: none;}
+         .saltolg{display: none;}  
+}
+/*arriba de 7682.... */
+@media only screen and (min-width: 768px) {
+    #logoflia{
+        width:40%;
+        height: 35%
+     }
+    #formDescuento {       
+        margin-right: 100px;
+        margin-left: 100px;       
         }
-        #btnEnviarDescuento{
-            background-color: black;
-            color: white;
-            width: 50%;             
-       }     
+    #formContacto {
+        margin-right: 0px;
+        margin-left: 0px;        
+      }
 
+    #seccionFormularioContacto{
+        flex-direction: row;
+    }
+    .txtDescuento{width: 60%; margin: 0 auto;}
+    .txtDescripcion{margin:10px;}
+    .textosContacto{margin-top:100px}
+  }
+
+/*arriba de 992.... */
+@media only screen and (min-width: 992px) {
+    #logoflia{
+        width:250px;
+        height: 200px;
+     }
+    #formDescuento {
+        margin-right: 0px;
+        margin-left: 0px;
+      }
+       .btnNavSm{display: none;}
+        .btnNavLg{display: block;}
+        .txtDescuento{width:80%; margin: 0 auto;}
+        .textosDescuento{margin-top: 150px;}
 }
 
 /*arriba de 1400.... */
-@media only screen and (min-width: 1400px) {      
-
-   
+@media only screen and (min-width: 1200px) {      
+     
+    .saltolg{display: block;}
         
 }
