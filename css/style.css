@@ -174,6 +174,7 @@ label.error
         .iconosRedes{width: 30px;height: 30px;margin: 5px;}
         .btnNavSm{display: block;}
         .btnNavLg{display: none;}
+        .saltolg{display: none;}
 }
 /*arriba de 576.... */
 @media only screen and (min-width: 576px) {
@@ -231,6 +232,7 @@ label.error
          .iconosRedes{width: 30px;height: 30px;margin: 5px;}
          .btnNavSm{display: block;}
          .btnNavLg{display: none;}
+         .saltolg{display: none;}  
 }
 /*arriba de 7682.... */
 @media only screen and (min-width: 768px) {
@@ -250,8 +252,8 @@ label.error
     }
     .txtDescuento{width: 60%; margin: 0 auto;}
     .txtDescripcion{margin:10px;}
-    .textosContacto{margin-top:100px}  
-}
+    .textosContacto{margin-top:100px}
+  }
 
 /*arriba de 992.... */
 @media only screen and (min-width: 992px) {
@@ -266,8 +268,8 @@ label.error
 }
 
 /*arriba de 1400.... */
-@media only screen and (min-width: 1400px) {      
+@media only screen and (min-width: 1200px) {      
 
-   
+    .saltolg{display: block;}
         
 }
