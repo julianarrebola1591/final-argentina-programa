@@ -155,7 +155,7 @@ label.error
             height: 40px;
         }
         .txtDescripcion{margin:15px;}
-        .iconosRedes{width: 40px;height: 40px;}
+        .iconosRedes{width: 30px;height: 30px;margin: 5px;}
 
 
 }
