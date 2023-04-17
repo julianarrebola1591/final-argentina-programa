@@ -77,3 +77,27 @@ label.error
 {
     color: darkred;
 }
+
+/*abajo de 576.... */
+@media only screen and (max-width: 576px) {
+    
+    #formDescuento {
+        background-color: #E3E3E3;
+        padding: 30px;
+        }
+        #btnEnviarDescuento{
+             background-color: black;
+             color: white;
+             width: 50%;             
+        }   
+
+
+}
+/*arriba de 576.... */
+@media only screen and (min-width: 576px) {
+    #formDescuento {
+        background-color: #E3E3E3;
+        padding: 30px;
+        }
+
+}
