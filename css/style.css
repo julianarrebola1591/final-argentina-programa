@@ -222,9 +222,8 @@ label.error
              margin-right: 30px;
              margin-left: 30px;
              font-family: 'Raleway', sans-serif;
-                    }      
-        
-         .logoNav{
+                    }                   
+             .logoNav{
              width: 40px;
              height: 40px;
          }
@@ -235,16 +234,35 @@ label.error
 }
 /*arriba de 7682.... */
 @media only screen and (min-width: 768px) {
+    #formDescuento {
+       
+        margin-right: 100px;
+        margin-left: 100px;
+       
+        }
+    #formContacto {
+        margin-right: 0px;
+        margin-left: 0px;        
+      }
+
     #seccionFormularioContacto{
         flex-direction: row;
-    }  
+    }
+    .txtDescuento{width: 60%; margin: 0 auto;}
+    .txtDescripcion{margin:10px;}
+    .textosContacto{margin-top:100px}  
 }
 
 /*arriba de 992.... */
 @media only screen and (min-width: 992px) {
-       
+    #formDescuento {
+        margin-right: 0px;
+        margin-left: 0px;
+      }
        .btnNavSm{display: none;}
         .btnNavLg{display: block;}
+
+        .txtDescuento{width:80%; margin: 0 auto;}
 }
 
 /*arriba de 1400.... */
