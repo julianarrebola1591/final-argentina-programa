@@ -175,8 +175,8 @@ label.error
          margin: 8px;
      }
      #logoflia{
-         width: 60%;
-         height: 30%;
+        width: 50%;
+        height: 35%
      }
      #diezAños {
          padding: 0px;        
@@ -190,6 +190,8 @@ label.error
          padding: 30px;
          margin-top: 15px;
          margin-bottom: 30px;
+         margin-right: 40px;
+         margin-left: 40px
          }
      #btnEnviarDescuento{
               background-color: black;
@@ -203,13 +205,15 @@ label.error
          }
          #formContacto{
              padding: 20px;
+             margin-right: 30px;
+             margin-left: 30px;
                     }      
         
          .logoNav{
              width: 40px;
              height: 40px;
          }
-         .txtDescripcion{margin:15px;}
+         .txtDescripcion{margin:25px;}
          .iconosRedes{width: 30px;height: 30px;margin: 5px;}
          .btnNavSm{display: block;}
          .btnNavLg{display: none;}
