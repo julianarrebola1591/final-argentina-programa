@@ -132,7 +132,9 @@ label.error
     #containerProductos{
         margin-bottom: 80px;
     }
-
+    #seccionFormulario{
+        flex-direction: column-reverse;
+    }
     #formDescuento {
         background-color: #E3E3E3;
         padding: 30px;
@@ -163,6 +165,9 @@ label.error
 }
 /*arriba de 576.... */
 @media only screen and (min-width: 576px) {
+    #seccionFormulario{
+        flex-direction: column-reverse;
+    }
     #formDescuento {
         background-color: #E3E3E3;
         padding: 30px;
@@ -179,7 +184,9 @@ label.error
 }
 /*arriba de 7682.... */
 @media only screen and (min-width: 768px) {
-     
+    #seccionFormulario{
+        flex-direction: row;
+    }  
 }
 
 /*arriba de 992.... */
