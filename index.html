@@ -20,12 +20,12 @@
       </button>
       <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
         <div class="navbar-nav align-items-center">
-          <a class="nav-link bg-white" aria-current="page" href="#">Quienes somos</a>
-          <a class="nav-link bg-white" href="#">Productos</a>
-          <a class="nav-link bg-white" href="#">Contacto</a>                   
+          <a class="nav-link bg-white border-3 border-dark border-end" aria-current="page" href="#">Quienes somos</a>
+          <a class="nav-link bg-white border-3 border-dark border-end" href="#">Productos</a>
+          <a class="nav-link bg-white " href="#">Contacto</a>                   
         </div>
       </div>
-      <button type="button" class="btnLogin rounded-pill border-0 float-end">Obtene tu descuento</button>   
+      <a  class="p-2 rounded-pill bg-black text-white text-decoration-none border-0 float-end" href="#obteneDescuento">Obtene tu descuento</a>   
     </div>
   </nav> 
   
@@ -77,22 +77,24 @@
       </div>
     </div>
     
-    </div>
     <div class="row">
-      <div class="col-xl-6 col-lg-6 text-center" >
-      <h4>¿Quienes somos? </h4>
+      <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 ">
+      <h4 class="text-center">¿Quienes somos? </h4>
       <p>Somos flia, Familia de diseño.
       Una familia de diseño en la que cada 
       integrante aporta lo mejor de sí para crear
       y producir objetos que además 
       de ser útiles sean funcionales y prácticos.</p>
       </div>
-      <div class="col-xl-6 col-lg-6 text-center">
-        <h4>Bases y valores</h4>
+      <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 ">
+        <h4 class="text-center">Bases y valores</h4>
         <p>Somos una familia que crece día a día permitiendo de esta forma abrir un abanico de posibilidades realzando el valor del diseño, 
         convocando a la experiencia de disfrutar de un objeto e invitando a transmitir un abrazo en el momento de ofrecer un regalo</p>
       </div>
     </div>
+
+    </div>
+ 
   
   <div class="container-fluid" id="diezAños">
     <div class="container text p-5">
@@ -109,7 +111,7 @@
         <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
         
           <form id="formDescuento" method="post" novalidate="">
-            <h4>Accede a tu descuento</h4>
+            <h4 class="text-center">Accede a tu descuento</h4>
             <div class="mb-3">
               <label for="nombre" class="form-label">Nombre</label>
               <input type="text" class="form-control" id="nombre" name="nombre">
@@ -122,11 +124,11 @@
               <label for="exampleFormControlInput1" class="form-label">Mail</label>
               <input type="email" class="form-control" id="email" name="email">      
             </div>
-            <button id="btnEnviarDescuento" type="button" class="btn btn-primary rounded-pill border-0 ">Enviar</button>  
+            <button id="btnEnviarDescuento" type="button" class="btn btn-primary text-center mx-auto d-block rounded-pill border-0 ">Enviar</button>  
           </form>  
         </div>
-        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 text-center">
-          <h4>¿ Como obtener el descuento ?</h4>
+        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+          <h4 class="text-center">¿ Como obtener el descuento ?</h4>
           <p>Para obtener el 25% de descuento solo tenes que llenar el formulario y luego tendras acceso a nuestro catalogo con todos los productos de Flia</p>
         </div>    
       </div>    
@@ -134,9 +136,8 @@
     <h3 class="text-center">Contacto</h3>
   </div>
   
-  <footer>
-    <div class="container">
-      <div class="row ">
+  <footer class="container">
+          <div class="row ">
         <div class="col-lg-6 col-md-6 col-sm-12">
 
           <form id="formContacto" method="post" novalidate="">
@@ -162,17 +163,17 @@
             </div>
             <button id="btnEnviarContacto" type="button" class="btn btn-primary border-0 ">Enviar</button>   
           </div>
-
+          <div class="col-lg-6 col-md-6 col-sm-12"> 
+            <h4 class="text-center">¿ Contas con una pyme 
+            o servicio de venta al 
+            por mayor ?</h4>
+            <p>Escribinos un mail con tus datos y teléfono
+            y nuestros directores de venta te 
+            van a poder asesorar en este 
+            hermoso camino al éxito.</p>
+          </div>
         </div>
-        <div class="col-lg-6 col-md-6 col-sm-12"> 
-          <h4>¿ Contas con una pyme 
-          o servicio de venta al 
-          por mayor ?</h4>
-          <p>Escribinos un mail con tus datos y teléfono
-          y nuestros directores de venta te 
-          van a poder asesorar en este 
-          hermoso camino al éxito.</p>
-        </div>
+       
 
         <div class="redesContacto text-center">
           <a href="#" ><i class="fa-brands fa-whatsapp "></i></a>
@@ -180,12 +181,11 @@
           <a href="#" ><i class="fa-brands fa-facebook-f "></i></a>    
         </div>
 
-      </div>
-
+      
       <div class="linksDerechos border-3 border-top border-dark">
-        <div class="mt-3 mb-3"> <a href="" class="p-2 border-3 border-end border-dark"> © 2023 Flia </a>
-          <a href="" class="p-2 border-3 border-end border-dark"> Politicas de privacidad</a>
-          <a href="" class="p-2 "> Terminos de servicio </a>
+        <div class="mt-3 mb-3"> <a href="" class="p-2 border-3 border-end border-dark bg-transparent text-dark text-decoration-none"> © 2023 Flia </a>
+          <a href="" class="p-2 border-3 border-end border-dark bg-transparent text-dark text-decoration-none"> Politicas de privacidad</a>
+          <a href="" class="p-2  bg-transparent text-dark text-decoration-none"> Terminos de servicio </a>
         </div>  
       </div>
     </div>
