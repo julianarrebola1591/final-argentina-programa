@@ -167,6 +167,7 @@ label.error
         margin-top: 15px;
         margin-bottom: 30px;
         font-family: 'Raleway', sans-serif;
+        text-align: left;
         }
     #btnEnviarDescuento{
              background-color: black;
@@ -181,6 +182,7 @@ label.error
         #formContacto{
             padding: 20px;
             font-family: 'Raleway', sans-serif;
+            text-align: left;
                    }      
        
         .logoNav{
@@ -224,6 +226,7 @@ label.error
          margin-left: 40px;
          padding-bottom: 50px;
          font-family: 'Raleway', sans-serif;
+         text-align: left;
          }
      #btnEnviarDescuento{
               background-color: black;
@@ -240,6 +243,7 @@ label.error
              margin-right: 30px;
              margin-left: 30px;
              font-family: 'Raleway', sans-serif;
+             text-align: left;
                     }                   
              .logoNav{
              width: 40px;
@@ -287,7 +291,7 @@ label.error
        .btnNavSm{display: none;}
         .btnNavLg{display: block;}
         .txtDescuento{width:80%; margin: 0 auto;}
-        .textosDescuento{margin-top: 150px;}
+        .textosDescuento{margin-top: 0px;}
 }
 
 /*arriba de 1400.... */
