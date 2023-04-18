@@ -19,9 +19,9 @@
       </button>       
       <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
         <div class="navbar-nav align-items-center">
-          <a class="nav-link bg-white border-3 hover" aria-current="page" href="#">Quienes somos</a>
-          <a class="nav-link bg-white border-3 " href="#">Productos</a>
-          <a class="nav-link bg-white " href="#">Contacto</a>                   
+          <a class="nav-link bg-white border-3 hover" aria-current="page" href="#QuienesSomos">Quienes somos</a>
+          <a class="nav-link bg-white border-3 " href="Productos">Productos</a>
+          <a class="nav-link bg-white " href="#Contacto">Contacto</a>                   
         </div>
       </div>
       <a class="btnNavLg p-2 rounded-pill bg-black text-white text-decoration-none border-0 float-end" href="#obteneDescuento">Obtene tu descuento</a>   
@@ -37,7 +37,7 @@
   </div>
  
 
-    <h2 class="text-center mb-5">Productos</h2>
+    <h2 class="text-center mb-5" id="Productos">Productos</h2>
     <div class="container-carusel" id="containerProductos">
       <button id="prev"></button>
       <div class="slider">
@@ -81,7 +81,7 @@
     </div>
     
  <!-- Cada ROW debe estar contenido con un CONTAINER -->
-    <div class="container">
+    <div class="container" id="QuienesSomos">
       <div class="row">
         <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 ">
           <h4 class="text-center p-2">¿Quienes somos? </h4>
@@ -142,9 +142,10 @@
     
   </div>
   <div class="container-fluid bg-white " >
-    <img src="Imagenes/Img-Inicio-01.png" alt="Imagen de los productos" class="img-fluid mt-5 mb-5">
+    <div class="container"><img src="Imagenes/Img-Inicio-01.png" alt="Imagen de los productos" class="img-fluid mt-5 mb-5"></div>
+    
   </div>
-  <footer class="container">
+  <footer class="container" id="Contacto">
     <h3 class="text-center bold pt-5 pb-3">Contacto</h3>
     <div class="row" id="seccionFormularioContacto">
       <div class="col-lg-6 col-md-6 col-sm-12 p-3">
@@ -172,7 +173,7 @@
           <button id="btnEnviarContacto" type="button" class="btn bg-white mx-auto d-block border-0 ">Enviar</button>
         </form>
       </div>
-      <div class="col-lg-6 col-md-6 col-sm-12 p-3">
+      <div class="col-lg-6 col-md-6 col-sm-12 p-3 container-descuento">
         <div class="textosContacto"> <h4 class="text-center p-2">¿ Contas con una pyme o servicio de venta al por mayor ?</h4>
           <p class="txtDescripcion">Escribinos un mail con tus datos y teléfono
             y nuestros directores de venta te
