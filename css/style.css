@@ -344,3 +344,90 @@ label.error
     .txtDescripcion{margin:40px;}
         
 }
+
+/*Formulario multipaso*/
+
+.wizard .nav-tabs {
+position: relative;
+margin-bottom: 0;
+border-bottom-color: transparent;
+}
+
+.wizard > div.wizard-inner {
+position: relative;
+margin-bottom: 50px;
+text-align: center;
+}
+
+.connecting-line {
+height: 2px;
+background: #e0e0e0;
+position: absolute;
+width: 75%;
+margin: 0 auto;
+left: 0;
+right: 0;
+top: 50px;
+}
+
+span.round-tab {
+width: 30px;
+height: 30px;
+line-height: 30px;
+display: inline-block;
+border-radius: 50%;
+background: #fff;
+position: absolute;
+left: 0;
+text-align: center;
+font-size: 16px;
+color: #0e214b;
+font-weight: 500;
+border: 1px solid #ddd;
+}
+
+.wizard li > a.active span.round-tab {
+background: #FFC107;
+color: #fff;
+border-color: #FFC107;
+}
+.wizard li> a.active span.round-tab i {
+color: #5bc0de;
+}
+.wizard .nav-tabs > li> a.active i {
+color: #FFC107;
+}
+.wizard .nav-tabs > li {
+width: 25%;
+}
+
+.wizard .nav-tabs > li a {
+width: 30px;
+height: 30px;
+margin: 5px auto;
+border-radius: 100%;
+padding: 0;
+background-color: transparent;
+position: relative;
+top: 30px;
+}
+.wizard .nav-tabs > li a i {
+position: absolute;
+top: -20px;
+font-style: normal;
+font-weight: 400;
+white-space: nowrap;
+left: 50%;
+transform: translate(-50%, -50%);
+font-size: 12px;
+font-weight: 700;
+color: #000;
+}
+
+.wizard .nav-tabs > li a:hover {
+background: transparent;
+}
+    
+    
+    
+    
