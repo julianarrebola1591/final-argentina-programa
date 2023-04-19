@@ -129,5 +129,21 @@ $("#btnEnviarContacto").click(function()
     
 });
 
-const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
-const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+/*---------------------------------------- Botones Formulario Multipaso ----------------------------------------*/
+
+const tabList = document.querySelectorAll('button[data-bs-toggle="tab"]')
+var tab_actual = 0;
+$(".btn-siguiente").click(function(){
+    tab_actual++;
+    let tab_siguiente = new bootstrap.Tab(tabList[tab_actual]);
+    tab_siguiente.show();
+});
+$(".btn-anterior").click(function(){
+    tab_actual--;
+    let tab_anterior = new bootstrap.Tab(tabList[tab_actual]);
+    tab_anterior.show();
+});
+
+$("#btn-enviar").click(function(){
+    alert("Formulario enviado");
+});

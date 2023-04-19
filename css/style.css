@@ -367,7 +367,7 @@ width: 75%;
 margin: 0 auto;
 left: 0;
 right: 0;
-top: 50px;
+top: 65px;
 }
 
 span.round-tab {
@@ -381,27 +381,27 @@ position: absolute;
 left: 0;
 text-align: center;
 font-size: 16px;
-color: #0e214b;
+color: #000000;
 font-weight: 500;
 border: 1px solid #ddd;
+
 }
 
-.wizard li > a.active span.round-tab {
+.wizard li > button.active span.round-tab {
 background: #FFC107;
 color: #fff;
 border-color: #FFC107;
+
 }
-.wizard li> a.active span.round-tab i {
-color: #5bc0de;
-}
-.wizard .nav-tabs > li> a.active i {
+
+.wizard .nav-tabs > li> button.active i {
 color: #FFC107;
 }
 .wizard .nav-tabs > li {
 width: 25%;
 }
 
-.wizard .nav-tabs > li a {
+.wizard .nav-tabs > li button {
 width: 30px;
 height: 30px;
 margin: 5px auto;
@@ -411,9 +411,9 @@ background-color: transparent;
 position: relative;
 top: 30px;
 }
-.wizard .nav-tabs > li a i {
+.wizard .nav-tabs > li button i {
 position: absolute;
-top: -20px;
+top: -5px;
 font-style: normal;
 font-weight: 400;
 white-space: nowrap;
@@ -424,10 +424,6 @@ font-weight: 700;
 color: #000;
 }
 
-.wizard .nav-tabs > li a:hover {
-background: transparent;
+.wizard .nav-tabs > li > button.nav-link {
+border-color: transparent;
 }
-    
-    
-    
-    

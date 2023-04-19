@@ -132,27 +132,35 @@
                 <ul class="nav nav-tabs" id="myTab" role="tablist">
                   <!-- Tab 1 -->
                   <li class="nav-item" role="presentation">
-                    <a class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane"
-                      type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true"><span
-                        class="round-tab">1 </span><i>Paso 1</i></a>
+                    <button class="nav-link active" id="cuenta-tab" data-bs-toggle="tab" data-bs-target="#cuenta" 
+                    type="button" role="tab" aria-controls="cuenta" aria-selected="true">
+                      <span class="round-tab">1 </span>
+                      <i>Paso 1</i>
+                      </button>
                   </li>
                   <!-- Tab 2 -->
                   <li class="nav-item" role="presentation">
-                    <a class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane"
-                      type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false"><span
-                        class="round-tab">2 </span><i>Paso 2</i></a>
+                    <button class="nav-link" id="personal-tab" data-bs-toggle="tab" data-bs-target="#personal"
+                    type="button" role="tab"  aria-controls="personal" aria-selected="false">
+                      <span class="round-tab">2 </span>
+                      <i>Paso 2</i>
+                    </button>
                   </li>
                   <!-- Tab 3 -->
                   <li class="nav-item" role="presentation">
-                    <a class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane"
-                      type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false"><span
-                        class="round-tab">3 </span><i>Paso 3</i></a>
+                    <button class="nav-link" id="metodoPago-tab" data-bs-toggle="tab" data-bs-target="#metodoPago" 
+                    type="button" role="tab" aria-controls="metodoPago" aria-selected="false">
+                      <span class="round-tab">3 </span>
+                      <i>Paso 3</i>
+                    </button>
                   </li>
                   <!-- Tab 4 -->
                   <li class="nav-item" role="presentation">
-                    <a class="nav-link" id="summary-tab" data-bs-toggle="tab" data-bs-target="#summary-tab-pane"
-                      type="button" role="tab" aria-controls="summary-tab-pane" aria-selected="false"><span
-                        class="round-tab">4 </span><i>Confirmar</i></a>
+                    <button class="nav-link" id="confirmar-tab" data-bs-toggle="tab" data-bs-target="#confirmar" 
+                    type="button" role="tab" aria-controls="confirmar" aria-selected="false">
+                      <span class="round-tab">4 </span>
+                      <i>Confirmar</i>
+                    </button>
                   </li>
                 </ul>
               </div>
@@ -161,7 +169,7 @@
               <form id="formDescuento" role="form" action="" novalidate="">
                 <div class="tab-content" id="main_form" method="post">
                   <!-- Formulario Panel 1 -->
-                  <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab"
+                  <div class="tab-pane fade show active" id="cuenta" role="tabpanel" aria-labelledby="cuenta-tab"
                     tabindex="0">
                     <h4 class="text-center">Cuenta</h4> 
 
@@ -187,7 +195,7 @@
                     </div>
                   </div>
                   <!-- Formulario Panel 2 -->
-                  <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab"
+                  <div class="tab-pane fade" id="personal" role="tabpanel" aria-labelledby="personal-tab"
                     tabindex="0">
                     <h4 class="text-center">Datos personales</h4>
                     <div class="row">
@@ -238,7 +246,7 @@
                   </div>
 
                   <!-- Formulario Panel 3 -->
-                  <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab"
+                  <div class="tab-pane fade" id="metodoPago" role="tabpanel" aria-labelledby="metodoPago-tab"
                     tabindex="0">
                     <h4 class="text-center">Metodo de pago</h4>
                     <div class="row">
@@ -257,10 +265,10 @@
                       <div class="row">
                         <label for="expirationDate" class="form-label">Fecha de expiración</label>
                         <div  class="col-3 mb-3">
-                          <input class="form-control border border-secondary-subtle" type="text" name="expirationDate" id="expirationDate" placeholder="dd">
+                          <input class="form-control border border-secondary-subtle" type="text" name="expirationMonth" id="expirationMonth" placeholder="mm">
                         </div>
                         <div  class="col-3 mb-3">
-                          <input class="form-control border border-secondary-subtle" type="text" name="expirationDate" id="expirationDate" placeholder="yy">
+                          <input class="form-control border border-secondary-subtle" type="text" name="expirationYear" id="expirationYear" placeholder="yy">
                         </div>
                       </div>
                     </div>
@@ -274,7 +282,7 @@
                     </div>
                   </div>
                   <!-- Formulario Panel 4 -->
-                  <div class="tab-pane fade" id="summary-tab-pane" role="tabpanel" aria-labelledby="summary-tab"
+                  <div class="tab-pane fade" id="confirmar" role="tabpanel" aria-labelledby="confirmar-tab"
                     tabindex="0">
                     <h4 class="text-center">Datos Ingresados</h4>
                     <div class="row">
