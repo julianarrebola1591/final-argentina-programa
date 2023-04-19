@@ -110,6 +110,22 @@ $("#btnEnviarDescuento").click(function()
 
 $("#btnEnviarContacto").click(function()
 {
+    window.html2canvas = html2canvas
+    window.jsPDF = window.jspdf.jsPDF
+
+    html2canvas(document.querySelector("#formContacto"),{
+        allowTaint:true,
+        useCORS: true,
+        scale: 1
+    }).then(canvas => {
+        var img = canvas.toDataURL("image/png");
+
+        var doc = new jsPDF();
+        doc.getFontSize(11);
+        doc.addImage(img,'pdf',10,20,155,155);
+        doc.save("Contacto.pdf");
+    });
+    
     if($("#formContacto").valid() == false)
     {
         return;
