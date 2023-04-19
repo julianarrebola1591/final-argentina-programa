@@ -48,7 +48,7 @@ p{font-family: 'Roboto', sans-serif;}
 
 #diezAños{
     background-color: black;
-    color: #FFC107;
+    color: white;
     padding: 20px;
 }
 #btnEnviarDescuento{
@@ -128,11 +128,6 @@ i.fa-brands {
     font-size: 20px;
 }
 
-#festeja{
-    color: #FFC107;
-    font-size: 36px;
-    padding: 0px 170px;
-}
 
 label.error
 {
@@ -161,19 +156,25 @@ label.error
     #containerProductos{
         margin-bottom: 80px;
     }
+    #festeja{
+        color: #FFC107;
+        font-size: 30px;
+        padding: 0px 0px;
+    }
        #formDescuento {
         background-color: #E3E3E3;
         padding: 30px;
         margin-top: 15px;
         margin-bottom: 30px;
         font-family: 'Raleway', sans-serif;
+        text-align: left;
         }
     #btnEnviarDescuento{
              background-color: black;
              color: white;
              width: 70%; 
              padding: 10px;
-             box-shadow: 0px 5px 15px black          
+             box-shadow: 0px 5px 15px #00000061;        
         }
         #seccionFormularioContacto{
             flex-direction: column-reverse;
@@ -181,6 +182,7 @@ label.error
         #formContacto{
             padding: 20px;
             font-family: 'Raleway', sans-serif;
+            text-align: left;
                    }      
        
         .logoNav{
@@ -215,6 +217,11 @@ label.error
      #containerProductos{
          margin-bottom: 80px;
      }
+     #festeja{
+        color: #FFC107;
+        font-size: 30px;
+        padding: 0px 0px;
+    }
         #formDescuento {
          background-color: #E3E3E3;
          padding: 30px;
@@ -224,13 +231,14 @@ label.error
          margin-left: 40px;
          padding-bottom: 50px;
          font-family: 'Raleway', sans-serif;
+         text-align: left;
          }
      #btnEnviarDescuento{
               background-color: black;
               color: white;
               width: 70%; 
               padding: 10px;
-              box-shadow: 0px 5px 15px black          
+              box-shadow: 0px 5px 15px #00000061;        
          }
          #seccionFormularioContacto{
              flex-direction: column-reverse;
@@ -240,6 +248,7 @@ label.error
              margin-right: 30px;
              margin-left: 30px;
              font-family: 'Raleway', sans-serif;
+             text-align: left;
                     }                   
              .logoNav{
              width: 40px;
@@ -251,8 +260,13 @@ label.error
          .btnNavLg{display: none;}
          .saltolg{display: none;}  
 }
-/*arriba de 7682.... */
+/*arriba de 768.... */
 @media only screen and (min-width: 768px) {
+    #festeja{
+        color: #FFC107;
+        font-size: 30px;
+        padding: 0px 0px;
+    }
     #logoflia{
         width:40%;
         height: 35%
@@ -271,7 +285,7 @@ label.error
     }
     .txtDescuento{width: 60%; margin: 0 auto;}
     .txtDescripcion{margin:10px;}
-    .textosContacto{margin-top:100px}
+    
   }
 
 /*arriba de 992.... */
@@ -287,12 +301,129 @@ label.error
        .btnNavSm{display: none;}
         .btnNavLg{display: block;}
         .txtDescuento{width:80%; margin: 0 auto;}
-        .textosDescuento{margin-top: 150px;}
+        .textosDescuento{margin-top: 0px;}
 }
 
 /*arriba de 1400.... */
-@media only screen and (min-width: 1200px) {      
-     
+@media only screen and (min-width: 1200px) {    
+    #formDescuento {
+        margin-right: 40px;
+        margin-left: 40px;
+      }
+      #formContacto {
+        margin-right: 40px;
+        margin-left: 40px;
+      }
+      #festeja{
+               font-size: 36px;
+        padding: 0px 170px;
+    }
     .saltolg{display: block;}
         
+}
+
+/*arriba de 1400.... */
+@media only screen and (min-width: 1400px) {    
+    .textosContacto{margin:40px;}
+        
+}
+
+/*arriba de 1600.... */
+@media only screen and (min-width: 1600px) {    
+    #festeja {      
+        padding: 0px 190px;          
+      }
+      #formDescuento {
+        margin-right: 70px;
+        margin-left: 70px;
+      }
+      #formContacto {
+        margin-right: 70px;
+        margin-left: 70px;
+      }
+    .txtDescripcion{margin:40px;}
+        
+}
+
+/*Formulario multipaso*/
+
+.wizard .nav-tabs {
+position: relative;
+margin-bottom: 0;
+border-bottom-color: transparent;
+}
+
+.wizard > div.wizard-inner {
+position: relative;
+margin-bottom: 50px;
+text-align: center;
+}
+
+.connecting-line {
+height: 2px;
+background: #e0e0e0;
+position: absolute;
+width: 75%;
+margin: 0 auto;
+left: 0;
+right: 0;
+top: 65px;
+}
+
+span.round-tab {
+width: 30px;
+height: 30px;
+line-height: 30px;
+display: inline-block;
+border-radius: 50%;
+background: #fff;
+position: absolute;
+left: 0;
+text-align: center;
+font-size: 16px;
+color: #000000;
+font-weight: 500;
+border: 1px solid #ddd;
+
+}
+
+.wizard li > button.active span.round-tab {
+background: #FFC107;
+color: #fff;
+border-color: #FFC107;
+
+}
+
+.wizard .nav-tabs > li> button.active i {
+color: #FFC107;
+}
+.wizard .nav-tabs > li {
+width: 25%;
+}
+
+.wizard .nav-tabs > li button {
+width: 30px;
+height: 30px;
+margin: 5px auto;
+border-radius: 100%;
+padding: 0;
+background-color: transparent;
+position: relative;
+top: 30px;
+}
+.wizard .nav-tabs > li button i {
+position: absolute;
+top: -5px;
+font-style: normal;
+font-weight: 400;
+white-space: nowrap;
+left: 50%;
+transform: translate(-50%, -50%);
+font-size: 12px;
+font-weight: 700;
+color: #000;
+}
+
+.wizard .nav-tabs > li > button.nav-link {
+border-color: transparent;
 }
