@@ -5,4 +5,4 @@ Integrantes:
 
 | Nombre  | Apellido |
 | ------------- | ------------- |
-| Cristian Gustavo  | Vargas Rondal  |
+| Cristian Gustavo  | Vargas Rondal  | Pablo Manuel Lopez
