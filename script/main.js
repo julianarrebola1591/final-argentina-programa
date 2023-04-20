@@ -43,9 +43,26 @@ prev.onclick = function()
 
 
 /*----------------------------------------Validate----------------------------------------*/
+jQuery.validator.addMethod("exactlength", function(value, element, param) {
+    return this.optional(element) || value.length == param;
+   }, $.validator.format("Por favor ingrese {0} characteres."));
 
 $("#formDescuento").validate({
     rules: {
+        usuario: {
+            required: true,
+            minlength: 3,
+            maxlength: 30,
+        },
+        email: {
+            required: true,
+            email: true
+        },
+        contraseña: {
+            required: true,
+            minlength: 3,
+            maxlength: 30,
+        },
         nombre: {
             required: true,
             minlength: 3,
@@ -56,9 +73,53 @@ $("#formDescuento").validate({
             minlength: 3,
             maxlength: 30
         },
-        email: {
+        telefono: {
             required: true,
-            email: true
+            number: true
+        },
+        pais: {
+            required: true,
+            minlength: 3,
+            maxlength: 30,
+        },
+        provincia: {
+            required: true,
+            minlength: 3,
+            maxlength: 30,
+        },
+        ciudad: {
+            required: true,
+            minlength: 3,
+            maxlength: 30,
+        },
+        direccion: {
+            required: true,
+            minlength: 3,
+            maxlength: 30,
+        },
+        codigoPostal: {
+            required: true,
+            minlength: 3,
+            maxlength: 30,
+        },
+        cardName: {
+            required: true,
+            minlength: 3,
+            maxlength: 30,
+        },
+        cardNumber: {
+            required: true,
+            number: true
+        },
+        expirationMonth: {
+            required: true,
+            number: true,
+            exactlength: 2
+        },
+        expirationYear: {
+            required: true,
+            number: true,
+            exactlength: 2
         }
     }
 });
@@ -91,22 +152,6 @@ $("#formContacto").validate({
     }
 });
 
-$("#btnEnviarDescuento").click(function()
-{
-    if($("#formDescuento").valid() == false)
-    {
-        return;
-    }
-
-    let nombre = $("#nombre").val();
-    let apellido = $("#apellido").val();
-    let email = $("#email").val();
-
-    console.log(nombre);
-    console.log(apellido);
-    console.log(email);
-    
-});
 
 $("#btnEnviarContacto").click(function()
 {
@@ -120,12 +165,6 @@ $("#btnEnviarContacto").click(function()
     let email = $("#emailContacto").val();
     let telefono = $("#telefono").val();
     let mensaje = $("#mensaje").val();
-
-    console.log(nombre);
-    console.log(apellido);
-    console.log(email);
-    console.log(telefono);
-    console.log(mensaje);
 
     window.html2canvas = html2canvas
     window.jsPDF = window.jspdf.jsPDF
@@ -148,35 +187,52 @@ $("#btnEnviarContacto").click(function()
 
 const tabList = document.querySelectorAll('button[data-bs-toggle="tab"]')
 var tab_actual = 0;
+
 $(".btn-siguiente").click(function(){
+    event.preventDefault();
+    if($("#formDescuento").valid() == false)
+    {
+        return;
+    }
+    email = $("#email").val();
+    nombre= $("#nombre").val();
+    apellido= $("#apellido").val();
+
     tab_actual++;
     let tab_siguiente = new bootstrap.Tab(tabList[tab_actual]);
     tab_siguiente.show();
 });
+
 $(".btn-anterior").click(function(){
+    if(tab_actual == 3)
+    {
+        return;
+    }
     tab_actual--;
     let tab_anterior = new bootstrap.Tab(tabList[tab_actual]);
     tab_anterior.show();
 });
 
-$("#btn-enviar").click(function(){
+$("#btn-enviar").click(function(event){
+    event.preventDefault();
+    generatePDF(nombre, apellido, email);
     alert("Formulario enviado");
 });
 
-$("#btn-cancelar").click(function(){
+$("#btn-cancelar").click(function(event){
+    event.preventDefault();
     alert("Formulario cancelado");
 });
-
 
 /*---------------------------------------- Previsualizacion ----------------------------------------*/
 
 var usuario = $("#usuario");
-var email = $("#email");
+var email;
 var telefono =$("#telefono");
 var contraseña = $("#contraseña");
 
-var nombre = $("#nombre");
-var apellido = $("#apellido");
+var nombre;
+var apellido;
 var pais = $("#pais");
 var provincia = $("#provincia");
 var ciudad = $("#ciudad");
