@@ -5,4 +5,8 @@ Integrantes:
 
 | Nombre  | Apellido |
 | ------------- | ------------- |
-| Cristian Gustavo  | Vargas Rondal  | Pablo Manuel Lopez
+| Cristian Gustavo  | Vargas Rondal  |
+| Ezequiel Anthony  | Melo           |
+| Julián            | Arrébola       |
+| Pablo Manuel      | Lopez          |  
+
