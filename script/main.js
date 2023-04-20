@@ -248,7 +248,6 @@ $("#btn-corfirmar").click(function(){
 
 $("#btn-cancelar").click(function(event){
     event.preventDefault();
-    alert("Formulario cancelado");
 });
 
 /*---------------------------------------- Previsualizacion ----------------------------------------*/
