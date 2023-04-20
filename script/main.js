@@ -126,7 +126,6 @@ $("#btnEnviarContacto").click(function()
     console.log(email);
     console.log(telefono);
     console.log(mensaje);
-    
 });
 
 /*---------------------------------------- Botones Formulario Multipaso ----------------------------------------*/
@@ -147,3 +146,33 @@ $(".btn-anterior").click(function(){
 $("#btn-enviar").click(function(){
     alert("Formulario enviado");
 });
+
+$("#btn-cancelar").click(function(){
+    alert("Formulario cancelado");
+});
+
+
+/*---------------------------------------- Previsualizacion ----------------------------------------*/
+
+var usuario = $("#usuario");
+var email = $("#email");
+var telefono =$("#telefono");
+var contraseña = $("#contraseña");
+
+var nombre = $("#nombre");
+var apellido = $("#apellido");
+var pais = $("#pais");
+var provincia = $("#provincia");
+var ciudad = $("#ciudad");
+var direccion = $("#direccion");
+var codigoPostal = $("#codigoPostal");
+
+var tipoTarjeta = $("#tipoTarjeta");
+var numeroTarjeta = $("#numeroTarjeta");
+var nombreTarjeta = $("#nombreTarjeta");
+var fechaVencimiento = $("#fechaVencimiento");
+
+
+
+
+
