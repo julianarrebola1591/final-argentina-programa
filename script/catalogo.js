@@ -1,3 +1,4 @@
+//para agregar imagenes deben estar en base 64: (ingresar a un conversor para imagenes)
 async function generatePDF(name, lastname, email) {
   var pdf = new window.jspdf.jsPDF({
       orientation: 'p',

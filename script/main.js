@@ -235,18 +235,16 @@ $(".btn-anterior").click(function(){
     tab_anterior.show();
 });
 
-$("#btn-corfirmar").click(function(event){
+$("#btn-confirmar").click(function(event){
     event.preventDefault();
-    let contraseña = $("#contraseña").val();
-    let nombre = $("#nombre").val();
-    let apellido = $("#apellido").val();
+    email = $("#email").val();
+    nombre = $("#nombre").val();
+    apellido = $("#apellido").val();
     generatePDF(nombre, apellido, email);
-    alert("Formulario enviado correctamente");
 });
 
 $("#btn-cancelar").click(function(event){
     event.preventDefault();
-    alert("Formulario cancelado");
 });
 
 /*---------------------------------------- Previsualizacion ----------------------------------------*/
