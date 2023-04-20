@@ -261,6 +261,8 @@
                     tabindex="0">
                     <form id="form-tab-3" class="formDescuento" method="post" novalidate="">
                       <h4 class="text-center">Metodo de pago</h4>
+                      <span>Este paso no es obligatorio</span>
+                      <span>Podes agregar el metodo de pago despues de crear el usuario</span>
                       <div class="row">
                         <div class="col-12 my-3">
                           <input class="form-check" type="checkbox" value="" name="cardCredit " id="cardCredit">
@@ -306,7 +308,7 @@
                           < Anterior
                         </button> 
                                 <!-- Button trigger modal -->
-                        <button type="button" class="btn btn-primary text-center mx-auto d-block rounded-pill border-0 bg-black bold" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                        <button id="btn-enviar" type="button" class="btn btn-primary text-center mx-auto d-block rounded-pill border-0 bg-black bold" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                           Obtene tu descuento
                         </button>
                       </div>
@@ -327,7 +329,7 @@
                             </div>
                             <div class="modal-footer">
                               <button id="btn-cancelar" type="submit" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-                              <button id="btn-confirmar" type="submit" class="btn btn-primary" data-bs-dismiss="modal">Confirmar</button>
+                              <button id="btn-confirmar" type="button" class="btn btn-primary" data-bs-dismiss="modal">Confirmar</button>
                             </div>
                           </div>
                         </div>

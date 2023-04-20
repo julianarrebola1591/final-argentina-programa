@@ -116,24 +116,24 @@ $("#form-tab-3").validate({
             required: false
         },
         cardName:{
-            required: true,
+            required: false,
             minlength: 3,
             maxlength: 30,
         },
         cardNumber:{
-            required: true,
+            required: false,
             minlength: 16,
             maxlength: 16,
             number: true
         },
         mesVencimiento:{
-            required: true,
+            required: false,
             minlength: 2,
             maxlength: 2,
             number: true
         },
         añoVencimiento:{
-            required: true,
+            required: false,
             minlength: 2,
             maxlength: 2,
             number: true
@@ -235,12 +235,14 @@ $(".btn-anterior").click(function(){
     tab_anterior.show();
 });
 
-$("#btn-corfirmar").click(function(event){
-    event.preventDefault();
+$("#btn-enviar").click(function(){
     let contraseña = $("#contraseña").val();
     let nombre = $("#nombre").val();
     let apellido = $("#apellido").val();
     generatePDF(nombre, apellido, email);
+});
+
+$("#btn-corfirmar").click(function(){
     alert("Formulario enviado correctamente");
 });
 
