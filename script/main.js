@@ -43,6 +43,9 @@ prev.onclick = function()
 
 
 /*----------------------------------------Validate----------------------------------------*/
+jQuery.validator.addMethod("exactlength", function(value, element, param) {
+    return this.optional(element) || value.length == param;
+   }, $.validator.format("Por favor ingrese {0} characteres."));
 
 $("#form-tab-1").validate({
     rules: {
@@ -179,12 +182,6 @@ $("#btnEnviarContacto").click(function()
     let telefono = $("#telefono").val();
     let mensaje = $("#mensaje").val();
 
-    console.log(nombre);
-    console.log(apellido);
-    console.log(email);
-    console.log(telefono);
-    console.log(mensaje);
-
     window.html2canvas = html2canvas
     window.jsPDF = window.jspdf.jsPDF
 
@@ -229,20 +226,25 @@ $(".btn-siguiente").click(function(){
 });
 
 $(".btn-anterior").click(function(){
+    if(tab_actual == 3)
+    {
+        return;
+    }
     tab_actual--;
     let tab_anterior = new bootstrap.Tab(tabList[tab_actual]);
     tab_anterior.show();
 });
 
-
 $("#btn-corfirmar").click(function(){
+    event.preventDefault();
+    generatePDF(nombre, apellido, email);
     alert("Formulario enviado correctamente");
 });
 
-$("#btn-cancelar").click(function(){
+$("#btn-cancelar").click(function(event){
+    event.preventDefault();
     alert("Formulario cancelado");
 });
-
 
 /*---------------------------------------- Previsualizacion ----------------------------------------*/
 
