@@ -158,21 +158,28 @@ label.error
         margin-top: 15px;
       }
     #containerProductos{
-        margin-bottom: 80px;
+        margin-bottom: 60px;
     }
     #festeja{
         color: #FFC107;
         font-size: 30px;
         padding: 0px 0px;
     }
-       #formDescuento {
-        background-color: #E3E3E3;
-        padding: 30px;
-        margin-top: 15px;
-        margin-bottom: 30px;
-        font-family: 'Raleway', sans-serif;
-        text-align: left;
-        }
+    .item{
+        width: 170px;
+        height: 225px;
+    }
+    .slider{
+        height: 230px;
+    }
+    #formDescuento {
+    background-color: #E3E3E3;
+    padding: 30px;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    font-family: 'Raleway', sans-serif;
+    text-align: left;
+    }
     #btnEnviarDescuento{
              background-color: black;
              color: white;
@@ -219,7 +226,7 @@ label.error
          margin-top: 15px;
        }
      #containerProductos{
-         margin-bottom: 80px;
+         margin-bottom: 70px;
      }
      #festeja{
         color: #FFC107;
@@ -263,6 +270,13 @@ label.error
          .btnNavSm{display: block;}
          .btnNavLg{display: none;}
          .saltolg{display: none;}  
+         .item{
+            width: 180px;
+            height: 235px;
+        }
+        .slider{
+            height: 240px;
+        }
 }
 /*arriba de 768.... */
 @media only screen and (min-width: 768px) {
@@ -306,6 +320,13 @@ label.error
         .btnNavLg{display: block;}
         .txtDescuento{width:80%; margin: 0 auto;}
         .textosDescuento{margin-top: 0px;}
+        .item{
+            width: 250px;
+            height: 320px;
+        }
+        .slider{
+            height: 320px;
+        }
 }
 
 /*arriba de 1400.... */
