@@ -33,6 +33,26 @@ p{font-family: 'Roboto', sans-serif;}
 .navbar-nav a:hover:after{
     width: 100%;
 }
+.footer-link a{
+    margin-right: 10px;
+    padding: 12px;
+    position: relative;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+}
+.footer-link a::after{
+    content: "";
+    position: absolute;
+    background-color: black;
+    height: 3px;
+    width: 0%;
+    left: 0;
+    transition: 0.4s;
+    bottom: 2px;
+}
+.footer-link a:hover:after{
+    width: 100%;
+}
 #somosFlia{
     padding: 0;      
     height: 800px;
