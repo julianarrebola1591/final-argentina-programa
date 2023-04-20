@@ -165,7 +165,7 @@ label.error
         font-size: 30px;
         padding: 0px 0px;
     }
-       #formDescuento {
+       .formDescuento {
         background-color: #E3E3E3;
         padding: 30px;
         margin-top: 15px;
@@ -226,7 +226,7 @@ label.error
         font-size: 30px;
         padding: 0px 0px;
     }
-        #formDescuento {
+        .formDescuento {
          background-color: #E3E3E3;
          padding: 30px;
          margin-top: 15px;
@@ -275,7 +275,7 @@ label.error
         width:40%;
         height: 35%
      }
-    #formDescuento {       
+    .formDescuento {       
         margin-right: 100px;
         margin-left: 100px;       
         }
@@ -298,7 +298,7 @@ label.error
         width:250px;
         height: 200px;
      }
-    #formDescuento {
+    .formDescuento {
         margin-right: 0px;
         margin-left: 0px;
       }
@@ -310,7 +310,7 @@ label.error
 
 /*arriba de 1400.... */
 @media only screen and (min-width: 1200px) {    
-    #formDescuento {
+    .formDescuento {
         margin-right: 40px;
         margin-left: 40px;
       }
@@ -337,7 +337,7 @@ label.error
     #festeja {      
         padding: 0px 190px;          
       }
-      #formDescuento {
+      .formDescuento {
         margin-right: 70px;
         margin-left: 70px;
       }

@@ -44,21 +44,96 @@ prev.onclick = function()
 
 /*----------------------------------------Validate----------------------------------------*/
 
-$("#formDescuento").validate({
+$("#form-tab-1").validate({
     rules: {
-        nombre: {
+        usuario: {
             required: true,
             minlength: 3,
             maxlength: 30,
         },
+        email: {
+            required: true,
+            email: true
+        },
+        contraseña: {
+            required: true,
+            minlength: 8,
+            maxlength: 30
+        }
+    }
+});
+
+$("#form-tab-2").validate({
+    rules: {
+        nombre: {
+            required: true,
+            minlength: 3,
+            maxlength: 30
+        },
+
         apellido: {
             required: true,
             minlength: 3,
             maxlength: 30
         },
-        email: {
+        telefono: {
             required: true,
-            email: true
+            number: true
+        },
+        pais: {
+            required: true,
+            minlength: 3,
+            maxlength: 30
+        },
+        provincia: {
+            required: true,
+            minlength: 3,
+            maxlength: 30
+        },
+        ciudad: {
+            required: true,
+            minlength: 3,
+            maxlength: 30
+        },
+        direccion: {
+            required: true,
+            minlength: 3,
+            maxlength: 30
+        },
+        codigoPostal: {
+            required: true,
+            number: true
+        }
+    }
+});
+
+$("#form-tab-3").validate({
+    rules: {
+        cardCredit:{
+            required: false
+        },
+        cardName:{
+            required: true,
+            minlength: 3,
+            maxlength: 30,
+        },
+        cardNumber:{
+            required: true,
+            minlength: 16,
+            maxlength: 16,
+            number: true
+        },
+        mesVencimiento:{
+            required: true,
+            minlength: 2,
+            maxlength: 2,
+            number: true
+        },
+        añoVencimiento:{
+            required: true,
+            minlength: 2,
+            maxlength: 2,
+            number: true
         }
     }
 });
@@ -89,23 +164,6 @@ $("#formContacto").validate({
             maxlength: 200
         }
     }
-});
-
-$("#btnEnviarDescuento").click(function()
-{
-    if($("#formDescuento").valid() == false)
-    {
-        return;
-    }
-
-    let nombre = $("#nombre").val();
-    let apellido = $("#apellido").val();
-    let email = $("#email").val();
-
-    console.log(nombre);
-    console.log(apellido);
-    console.log(email);
-    
 });
 
 $("#btnEnviarContacto").click(function()
@@ -146,21 +204,39 @@ $("#btnEnviarContacto").click(function()
 
 /*---------------------------------------- Botones Formulario Multipaso ----------------------------------------*/
 
+
+
 const tabList = document.querySelectorAll('button[data-bs-toggle="tab"]')
 var tab_actual = 0;
+
 $(".btn-siguiente").click(function(){
+
+    if(tab_actual == 2 && $("#form-tab-3").valid() == false){
+        return;
+    }
+    if(tab_actual == 2){
+        cargarResumen();
+    }
+    if(tab_actual == 1 && $("#form-tab-2").valid() == false){
+        return;
+    }
+    if(tab_actual == 0 && $("#form-tab-1").valid() == false){
+        return;
+    }
     tab_actual++;
     let tab_siguiente = new bootstrap.Tab(tabList[tab_actual]);
     tab_siguiente.show();
 });
+
 $(".btn-anterior").click(function(){
     tab_actual--;
     let tab_anterior = new bootstrap.Tab(tabList[tab_actual]);
     tab_anterior.show();
 });
 
-$("#btn-enviar").click(function(){
-    alert("Formulario enviado");
+
+$("#btn-corfirmar").click(function(){
+    alert("Formulario enviado correctamente");
 });
 
 $("#btn-cancelar").click(function(){
@@ -170,23 +246,44 @@ $("#btn-cancelar").click(function(){
 
 /*---------------------------------------- Previsualizacion ----------------------------------------*/
 
-var usuario = $("#usuario");
-var email = $("#email");
-var telefono =$("#telefono");
-var contraseña = $("#contraseña");
-
-var nombre = $("#nombre");
-var apellido = $("#apellido");
-var pais = $("#pais");
-var provincia = $("#provincia");
-var ciudad = $("#ciudad");
-var direccion = $("#direccion");
-var codigoPostal = $("#codigoPostal");
-
-var tipoTarjeta = $("#tipoTarjeta");
-var numeroTarjeta = $("#numeroTarjeta");
-var nombreTarjeta = $("#nombreTarjeta");
-var fechaVencimiento = $("#fechaVencimiento");
+function cargarResumen(){ 
+    let usuario = $("#usuario").val();
+    let email = $("#email").val();
+    let contraseña = $("#contraseña").val();
+    let nombre = $("#nombre").val();
+    let apellido = $("#apellido").val();
+    let telefono =$("#telefono").val();
+    let pais = $("#pais").val();
+    let provincia = $("#provincia").val();
+    let ciudad = $("#ciudad").val();
+    let direccion = $("#direccion").val();
+    let codigoPostal = $("#codigoPostal").val();
+    let tipoTarjeta = $("#cardCredit").val();
+    let numeroTarjeta = $("#cardName").val();
+    let nombreTarjeta = $("#cardNumber").val();
+    let mesVencimiento = $("#mesVencimiento").val();
+    let añoVencimiento = $("#añoVencimiento").val();
+    let p = $("p.text-start");
+    $(p).empty();
+    $(p).append(`<h5>Datos de usuario</h5>`);
+    $(p).append(`<strong>Usuario</strong>: ${usuario} <br>`);
+    $(p).append(`<strong>Email</strong>: ${email} <br>`);
+    $(p).append(`<strong>Contraseña</strong>: ${contraseña} <br><br>`);
+    $(p).append(`<h5>Datos personales</h5>`);
+    $(p).append(`<strong>Nombre</strong>: ${nombre} <br>`);
+    $(p).append(`<strong>Apellido</strong>: ${apellido} <br>`);
+    $(p).append(`<strong>Telefono</strong>: ${telefono} <br>`);
+    $(p).append(`<strong>Pais</strong>: ${pais} <br>`);
+    $(p).append(`<strong>Provincia</strong>: ${provincia} <br>`);
+    $(p).append(`<strong>Ciudad</strong>: ${ciudad} <br>`);
+    $(p).append(`<strong>Direccion</strong>: ${direccion} <br>`);
+    $(p).append(`<strong>Codigo Postal</strong>: ${codigoPostal} <br><br>`);
+    $(p).append(`<h5>Datos de la tarjeta</h5>`);
+    $(p).append(`<strong>Tarjeta de credito</strong>: ${(tipoTarjeta)? "Si" : "No"} <br>`);
+    $(p).append(`<strong>Nombre de Tarjeta</strong>: ${nombreTarjeta} <br>`);
+    $(p).append(`<strong>Numero de Tarjeta</strong>: ${numeroTarjeta} <br>`);
+    $(p).append(`<strong>Fecha de Vencimiento</strong>: ${mesVencimiento} / ${añoVencimiento}`);
+};
 
 
 

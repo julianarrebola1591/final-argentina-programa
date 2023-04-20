@@ -166,154 +166,174 @@
               </div>
               <h4 class="mb-3 text-center">Accede a tu descuento</h4>
               <!-- Formulario-->
-              <form id="formDescuento" role="form" action="" novalidate="">
                 <div class="tab-content" id="main_form" method="post">
                   <!-- Formulario Panel 1 -->
                   <div class="tab-pane fade show active" id="cuenta" role="tabpanel" aria-labelledby="cuenta-tab"
                     tabindex="0">
-                    <h4 class="text-center">Cuenta</h4> 
-
-                    <div class="mb-3">
-                      <label for="usuario" class="form-label">Nombre de usuario</label>
-                      <input class="form-control border border-secondary-subtle" type="text" name="usuario" id="usuario"
-                        placeholder="">
-                    </div>
-                    <div class="mb-3">
-                      <label for="email" class="form-label">Email</label>
-                      <input class="form-control border border-secondary-subtle" type="email" name="email" id="email"
-                        placeholder="">
-                    </div>
-                    <div class="mb-3">
-                      <label for="contraseña" class="form-label">Contraseña</label>
-                      <input class="form-control border border-secondary-subtle" type="password" name="contraseña"
-                        id="contraseña" placeholder="">
-                    </div>
-                    <div class="d-flex justify-content-center">
-                      <button type="button" class="btn btn-primary text-center mx-auto d-block rounded-pill border-0 btn-siguiente">
-                        Siguiente >
-                      </button>
-                    </div>
+                    <form id="form-tab-1" class="formDescuento" method="post" novalidate="">
+                      <h4 class="text-center">Cuenta</h4> 
+                    
+                      <div class="mb-3">
+                        <label for="usuario" class="form-label">Nombre de usuario</label>
+                        <input class="form-control border border-secondary-subtle" type="text" name="usuario" id="usuario"
+                          placeholder="">
+                      </div>
+                      <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input class="form-control border border-secondary-subtle" type="email" name="email" id="email"
+                          placeholder="">
+                      </div>
+                      <div class="mb-3">
+                        <label for="contraseña" class="form-label">Contraseña</label>
+                        <input class="form-control border border-secondary-subtle" type="password" name="contraseña"
+                          id="contraseña" placeholder="">
+                      </div>
+                   
+                      <div class="d-flex justify-content-center">
+                        <button type="button" class="btn btn-primary text-center mx-auto d-block rounded-pill border-0 btn-siguiente">
+                          Siguiente >
+                        </button>
+                      </div>
+                    </form>
                   </div>
                   <!-- Formulario Panel 2 -->
                   <div class="tab-pane fade" id="personal" role="tabpanel" aria-labelledby="personal-tab"
                     tabindex="0">
-                    <h4 class="text-center">Datos personales</h4>
-                    <div class="row">
-                      <div class="mb-3 col-6">
-                        <label for="nombre" class="form-label">Nombre</label>
-                        <input class="form-control border border-secondary-subtle" type="text" name="nombre" id="nombre"
-                          placeholder="">
+                    <form id="form-tab-2" class="formDescuento" method="post" novalidate="">
+                      <h4 class="text-center">Datos personales</h4>
+                    
+                      <div class="row">
+                        <div class="mb-3 col-6">
+                          <label for="nombre" class="form-label">Nombre</label>
+                          <input class="form-control border border-secondary-subtle" type="text" name="nombre" id="nombre"
+                            placeholder="">
+                        </div>
+                        <div class="mb-3 col-6">
+                          <label for="apellido" class="form-label">Apellido</label>
+                          <input class="form-control border border-secondary-subtle" type="text" name="apellido"
+                            id="apellido" placeholder="">
+                        </div>
+                        <div class="mb-3 col-6">
+                          <label for="telefono" class="form-label">Telefono</label>
+                          <input class="form-control border border-secondary-subtle" type="text" name="telefono"
+                            id="telefono" placeholder="">
+                        </div>
+                        <div class="mb-3 col-6">
+                          <label for="pais" class="form-label">Pais</label>
+                          <input class="form-control border border-secondary-subtle" type="text" name="pais" id="pais"
+                            placeholder="">
+                        </div>
+                        <div class="mb-3 col-6">
+                          <label for="provincia" class="form-label">Provincia/Estado</label>
+                          <input class="form-control border border-secondary-subtle" type="text" name="provincia"
+                            id="provincia" placeholder="">
+                        </div>
+                        <div class="mb-3 col-6">
+                          <label for="ciudad" class="form-label">Ciudad</label>
+                          <input class="form-control border border-secondary-subtle" type="text" name="ciudad" id="ciudad"
+                            placeholder="">
+                        </div>
+                        <div class="mb-3 col-6">
+                          <label for="direccion" class="form-label">Direccion</label>
+                          <input class="form-control border border-secondary-subtle" type="text" name="direccion"
+                            id="direccion" placeholder="">
+                        </div>
+                        <div class="mb-3 col-6">
+                          <label for="codigoPostal" class="form-label">Codigo postal</label>
+                          <input class="form-control border border-secondary-subtle" type="text" name="codigoPostal"
+                            id="codigoPostal" placeholder="">
+                        </div>
                       </div>
-                      <div class="mb-3 col-6">
-                        <label for="apellido" class="form-label">Apellido</label>
-                        <input class="form-control border border-secondary-subtle" type="text" name="apellido"
-                          id="apellido" placeholder="">
+                    
+                      <div class="d-flex justify-content-center">
+                        <button type="button" class="btn btn-secondary text-center mx-auto d-block rounded-pill border-0 btn-anterior">
+                          < Anterior
+                        </button>
+                        <button type="button" class="btn btn-primary text-center mx-auto d-block rounded-pill border-0 btn-siguiente">
+                          Siguiente >
+                        </button>
                       </div>
-                      <div class="mb-3 col-6">
-                        <label for="telefono" class="form-label">Telefono</label>
-                        <input class="form-control border border-secondary-subtle" type="text" name="telefono"
-                          id="telefono" placeholder="">
-                      </div>
-                      <div class="mb-3 col-6">
-                        <label for="pais" class="form-label">Pais</label>
-                        <input class="form-control border border-secondary-subtle" type="text" name="pais" id="pais"
-                          placeholder="">
-                      </div>
-                      <div class="mb-3 col-6">
-                        <label for="provincia" class="form-label">Provincia/Estado</label>
-                        <input class="form-control border border-secondary-subtle" type="text" name="provincia"
-                          id="provincia" placeholder="">
-                      </div>
-                      <div class="mb-3 col-6">
-                        <label for="ciudad" class="form-label">Ciudad</label>
-                        <input class="form-control border border-secondary-subtle" type="text" name="ciudad" id="ciudad"
-                          placeholder="">
-                      </div>
-                      <div class="mb-3 col-6">
-                        <label for="direccion" class="form-label">Direccion</label>
-                        <input class="form-control border border-secondary-subtle" type="text" name="direccion"
-                          id="direccion" placeholder="">
-                      </div>
-                      <div class="mb-3 col-6">
-                        <label for="codigoPostal" class="form-label">Codigo postal</label>
-                        <input class="form-control border border-secondary-subtle" type="text" name="codigoPostal"
-                          id="codigoPostal" placeholder="">
-                      </div>
-                    </div>
-                    <div class="d-flex justify-content-center">
-                      <button type="button" class="btn btn-secondary text-center mx-auto d-block rounded-pill border-0 btn-anterior">
-                        < Anterior
-                      </button>
-                      <button type="button"class="btn btn-primary text-center mx-auto d-block rounded-pill border-0 btn-siguiente">
-                        Siguiente >
-                      </button>
-                    </div>
+                    </form>
                   </div>
-
                   <!-- Formulario Panel 3 -->
                   <div class="tab-pane fade" id="metodoPago" role="tabpanel" aria-labelledby="metodoPago-tab"
                     tabindex="0">
-                    <h4 class="text-center">Metodo de pago</h4>
-                    <div class="row">
-                      <div class="col-12 my-3">
-                        <input type="checkbox" value="true" name="cardCredit " id="cardCredit">
-                        <label for="cardCredit" class="form-label">Tarjeta de credito</label>
-                      </div>
-                      <div class="col-12 mb-3">
-                        <label for="cardName" class="form-label"> Nombre en la tarjeta</label>
-                        <input class="form-control border border-secondary-subtle" type="text" name="cardName " id="cardName" placeholder="">
-                      </div>
-                      <div class="col-12 mb-3">
-                        <label for="cardNumber" class="form-label">Numero de tarjeta</label>
-                        <input class="form-control border border-secondary-subtle" type="email" name="cardNumber" id="cardNumber" placeholder="">
-                      </div>
+                    <form id="form-tab-3" class="formDescuento" method="post" novalidate="">
+                      <h4 class="text-center">Metodo de pago</h4>
                       <div class="row">
-                        <label for="expirationDate" class="form-label">Fecha de vencimiento</label>
-                        <div  class="col-3 mb-3">
-                          <input class="form-control border border-secondary-subtle" type="text" name="expirationMonth" id="expirationMonth" placeholder="mm">
+                        <div class="col-12 my-3">
+                          <input class="form-check" type="checkbox" value="" name="cardCredit " id="cardCredit">
+                          <label for="cardCredit" class="form-label">Tarjeta de credito</label>
                         </div>
+                        <div class="col-12 mb-3">
+                          <label for="cardName" class="form-label"> Nombre en la tarjeta</label>
+                          <input class="form-control border border-secondary-subtle" type="text" name="cardName " id="cardName" placeholder="">
+                        </div>
+                        <div class="col-12 mb-3">
+                          <label for="cardNumber" class="form-label">Numero de tarjeta</label>
+                          <input class="form-control border border-secondary-subtle" type="text" name="cardNumber" id="cardNumber" placeholder="">
+                        </div>
+                        <label for="mesVencimiento" class="form-label">Fecha de vencimiento</label>
                         <div  class="col-3 mb-3">
-                          <input class="form-control border border-secondary-subtle" type="text" name="expirationYear" id="expirationYear" placeholder="yy">
+                          <input class="form-control border border-secondary-subtle" type="text" name="mesVencimiento" id="mesVencimiento" placeholder="mm">
+                        </div>
+                        <label for="añoVencimiento" class="form-label" hidden>Fecha de vencimiento</label>
+                        <div  class="col-3 mb-3">
+                          <input class="form-control border border-secondary-subtle" type="text" name="añoVencimiento" id="añoVencimiento" placeholder="yy">
                         </div>
                       </div>
-                    </div>
-                    <div class="d-flex justify-content-center">
-                      <button type="button" class="btn btn-secondary text-center mx-auto d-block rounded-pill border-0 btn-anterior">
-                        < Anterior 
-                      </button> 
-                      <button type="button" class="btn btn-primary text-center mx-auto d-block rounded-pill border-0 btn-siguiente">
-                        Siguiente >
-                      </button>
-                    </div>
+                      <div class="d-flex justify-content-center">
+                        <button type="button" class="btn btn-secondary text-center mx-auto d-block rounded-pill border-0 btn-anterior">
+                          < Anterior 
+                        </button> 
+                        <button type="button" class="btn btn-primary text-center mx-auto d-block rounded-pill border-0 btn-siguiente">
+                          Siguiente >
+                        </button>
+                      </div>
+                    </form>
                   </div>
                   <!-- Formulario Panel 4 -->
                   <div class="tab-pane fade" id="confirmar" role="tabpanel" aria-labelledby="confirmar-tab"
                     tabindex="0">
-                    <h4 class="text-center">Datos Ingresados</h4>
-                    <div class="row">
-                      <div class="col-12">
-                        <h3>Datos de la cuenta</h3>
-
-
+                    <form class="formDescuento">
+                      <h4 class="text-center">Verifica que los datos ingresados sean correctos</h4>
+                      <p class="text-start">
+                      
+                      </p>
+                      <div class="d-flex justify-content-center">
+                        <button type="button" class="btn btn-secondary text-center mx-auto d-block rounded-pill border-0 btn-anterior">
+                          < Anterior
+                        </button> 
+                                <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary text-center mx-auto d-block rounded-pill border-0 bg-black bold" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                          Obtene tu descuento
+                        </button>
                       </div>
-                      <div class="col-12">
-                        <h3>Datos personales</h3>
+              
+                      <!-- Modal -->
+                      <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h1 class="modal-title fs-5" id="staticBackdropLabel">Crear Cuenta</h1>
+                              <button type="button" class="btn-cancelar" data-bs-dismiss="modal" aria-label="cancelar"></button>
+                            </div>
+                            <div class="modal-body">
+                              <p>Al crear la cuenta tendras acceso al decuento en tus primeras 5 compras!</p>
+                              <p>Podras acceder a nuestro catalogo de productos</p>
+                              <p>Tambien contaras con descuentos exclusivos en envios!</p>
+                              <p>¿Deseas crear la cuenta?</p>
+                            </div>
+                            <div class="modal-footer">
+                              <button id="btn-cancelar" type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                              <button id="btn-confirmar" type="button" class="btn btn-primary" data-bs-dismiss="modal">Confirmar</button>
+                            </div>
+                          </div>
+                        </div>
                       </div>
-                      <div class="col-12">
-                        <h3>Metodo de pago</h3>
-                      </div>
-                    </div>
-                    <div class="d-flex justify-content-center">
-                      <button type="button" class="btn btn-secondary text-center mx-auto d-block rounded-pill border-0 btn-anterior">
-                        < Anterior
-                      </button> 
-                      <button id="btn-enviar" type="submit" class="btn btn-primary text-center mx-auto d-block rounded-pill border-0 bg-black bold">
-                        Obtene tu descuento
-                      </button>
-                    </div>
+                    </form>
                   </div>
                 </div>
-              </form>
             </div>
           </div>
           <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 container-descuento">
