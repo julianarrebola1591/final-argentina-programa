@@ -11,6 +11,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,700&family=Roboto:wght@100;300;400;500;700;900&display=swap"
     rel="stylesheet">
+  <link rel="icon" type="image/png" href="Imagenes/favicon2.png">
   <title>Langing Page Flia</title>
 </head>
 
@@ -132,7 +133,7 @@
                 <ul class="nav nav-tabs" id="myTab" role="tablist">
                   <!-- Tab 1 -->
                   <li class="nav-item" role="presentation">
-                    <button class="nav-link active" id="cuenta-tab" data-bs-toggle="tab" data-bs-target="#cuenta" 
+                    <button class="nav-link disabled active" id="cuenta-tab" data-bs-toggle="tab" data-bs-target="#cuenta" 
                     type="button" role="tab" aria-controls="cuenta" aria-selected="true">
                       <span class="round-tab">1 </span>
                       <i>Paso 1</i>
@@ -140,7 +141,7 @@
                   </li>
                   <!-- Tab 2 -->
                   <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="personal-tab" data-bs-toggle="tab" data-bs-target="#personal"
+                    <button class="nav-link disabled" id="personal-tab" data-bs-toggle="tab" data-bs-target="#personal"
                     type="button" role="tab"  aria-controls="personal" aria-selected="false">
                       <span class="round-tab">2 </span>
                       <i>Paso 2</i>
@@ -148,15 +149,15 @@
                   </li>
                   <!-- Tab 3 -->
                   <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="metodoPago-tab" data-bs-toggle="tab" data-bs-target="#metodoPago" 
+                    <button class="nav-link disabled" id="metodoPago-tab" data-bs-toggle="tab" data-bs-target="#metodoPago" 
                     type="button" role="tab" aria-controls="metodoPago" aria-selected="false">
                       <span class="round-tab">3 </span>
                       <i>Paso 3</i>
                     </button>
                   </li>
                   <!-- Tab 4 -->
-                  <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="confirmar-tab" data-bs-toggle="tab" data-bs-target="#confirmar" 
+                  <li class="nav-item disabled" role="presentation">
+                    <button class="nav-link disabled" id="confirmar-tab" data-bs-toggle="tab" data-bs-target="#confirmar" 
                     type="button" role="tab" aria-controls="confirmar" aria-selected="false">
                       <span class="round-tab">4 </span>
                       <i>Confirmar</i>
@@ -175,18 +176,16 @@
 
                     <div class="mb-3">
                       <label for="usuario" class="form-label">Nombre de usuario</label>
-                      <input class="form-control border border-secondary-subtle" type="text" name="usuario" id="usuario"
-                        placeholder="">
+                      <input class="form-control border border-secondary-subtle" type="text" name="usuario" id="usuario">
                     </div>
                     <div class="mb-3">
                       <label for="email" class="form-label">Email</label>
-                      <input class="form-control border border-secondary-subtle" type="email" name="email" id="email"
-                        placeholder="">
+                      <input class="form-control border border-secondary-subtle" type="email" name="email" id="email">
                     </div>
                     <div class="mb-3">
                       <label for="contraseña" class="form-label">Contraseña</label>
                       <input class="form-control border border-secondary-subtle" type="password" name="contraseña"
-                        id="contraseña" placeholder="">
+                        id="contraseña">
                     </div>
                     <div class="d-flex justify-content-center">
                       <button type="button" class="btn btn-primary text-center mx-auto d-block rounded-pill border-0 btn-siguiente">
@@ -201,38 +200,39 @@
                     <div class="row">
                       <div class="mb-3 col-6">
                         <label for="nombre" class="form-label">Nombre</label>
-                        <input class="form-control border border-secondary-subtle" type="text" name="nombre" id="nombre"
-                          placeholder="">
+                        <input class="form-control border border-secondary-subtle" type="text" name="nombre" id="nombre">
                       </div>
                       <div class="mb-3 col-6">
                         <label for="apellido" class="form-label">Apellido</label>
-                        <input class="form-control border border-secondary-subtle" type="text" name="apellido"
-                          id="apellido" placeholder="">
+                        <input class="form-control border border-secondary-subtle" type="text" name="apellido" id="apellido">
+                      </div>
+                      <div class="mb-3 col-6">
+                        <label for="telefono" class="form-label">Telefono</label>
+                        <input class="form-control border border-secondary-subtle" type="text" name="telefono"
+                          id="telefono">
                       </div>
                       <div class="mb-3 col-6">
                         <label for="pais" class="form-label">Pais</label>
-                        <input class="form-control border border-secondary-subtle" type="text" name="pais" id="pais"
-                          placeholder="">
+                        <input class="form-control border border-secondary-subtle" type="text" name="pais" id="pais">
                       </div>
                       <div class="mb-3 col-6">
                         <label for="provincia" class="form-label">Provincia/Estado</label>
                         <input class="form-control border border-secondary-subtle" type="text" name="provincia"
-                          id="provincia" placeholder="">
+                          id="provincia">
                       </div>
                       <div class="mb-3 col-6">
                         <label for="ciudad" class="form-label">Ciudad</label>
-                        <input class="form-control border border-secondary-subtle" type="text" name="ciudad" id="ciudad"
-                          placeholder="">
+                        <input class="form-control border border-secondary-subtle" type="text" name="ciudad" id="ciudad">
                       </div>
                       <div class="mb-3 col-6">
                         <label for="direccion" class="form-label">Direccion</label>
                         <input class="form-control border border-secondary-subtle" type="text" name="direccion"
-                          id="direccion" placeholder="">
+                          id="direccion">
                       </div>
                       <div class="mb-3 col-6">
                         <label for="codigoPostal" class="form-label">Codigo postal</label>
                         <input class="form-control border border-secondary-subtle" type="text" name="codigoPostal"
-                          id="codigoPostal" placeholder="">
+                          id="codigoPostal">
                       </div>
                     </div>
                     <div class="d-flex justify-content-center">
@@ -255,15 +255,15 @@
                         <label for="cardCredit" class="form-label">Tarjeta de credito</label>
                       </div>
                       <div class="col-12 mb-3">
-                        <label for="cardName" class="form-label">Nombre en la tarjeta</label>
+                        <label for="cardName" class="form-label"> Nombre en la tarjeta</label>
                         <input class="form-control border border-secondary-subtle" type="text" name="cardName " id="cardName" placeholder="">
                       </div>
                       <div class="col-12 mb-3">
-                        <label for="cardNumber" class="form-label">Numero de la tarjeta</label>
-                        <input class="form-control border border-secondary-subtle" type="email" name="cardNumber" id="cardNumber" placeholder="">
+                        <label for="cardNumber" class="form-label">Numero de tarjeta</label>
+                        <input class="form-control border border-secondary-subtle" type="text" name="cardNumber" id="cardNumber" placeholder="">
                       </div>
                       <div class="row">
-                        <label for="expirationDate" class="form-label">Fecha de expiración</label>
+                        <label for="expirationDate" class="form-label">Fecha de vencimiento</label>
                         <div  class="col-3 mb-3">
                           <input class="form-control border border-secondary-subtle" type="text" name="expirationMonth" id="expirationMonth" placeholder="mm">
                         </div>
@@ -286,16 +286,24 @@
                     tabindex="0">
                     <h4 class="text-center">Datos Ingresados</h4>
                     <div class="row">
-                      <div class="col">
-                        Datos ingresaos
+                      <div class="col-12">
+                        <h3>Datos de la cuenta</h3>
+
+
+                      </div>
+                      <div class="col-12">
+                        <h3>Datos personales</h3>
+                      </div>
+                      <div class="col-12">
+                        <h3>Metodo de pago</h3>
                       </div>
                     </div>
                     <div class="d-flex justify-content-center">
                       <button type="button" class="btn btn-secondary text-center mx-auto d-block rounded-pill border-0 btn-anterior">
                         < Anterior
                       </button> 
-                      <button id="btn-enviar" type="submit" class="btn btn-primary text-center mx-auto d-block rounded-pill border-0">
-                        Enviar
+                      <button id="btn-enviar" type="submit" class="btn btn-primary text-center mx-auto d-block rounded-pill border-0 bg-black bold">
+                        Obtene tu descuento
                       </button>
                     </div>
                   </div>
@@ -377,18 +385,20 @@
           <a href="" class="p-2 border-3 border-end border-dark bg-transparent text-dark text-decoration-none">
             Politicas
             de privacidad</a>
-          <a href="" class="p-2  bg-transparent text-dark text-decoration-none"> Terminos de servicio </a>
+          <a href="" class="p-2  bg-transparent text-dark text-decoration-none"> Terminos de servicio</a>
         </div>
       </div>
     </footer>
 
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.4/jspdf.min.js"></script>-->
   <script type="text/javascript" src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
   <script type="text/javascript" src="https://html2canvas.hertzen.com/dist/html2canvas.js"></script>
-  <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
   <script src="script/traduccionesValidate.js"></script>
+  <script src="script/catalogo.js"></script>
   <script src="script/main.js"></script>
 </body>
 
