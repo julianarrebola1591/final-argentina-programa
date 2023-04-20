@@ -235,8 +235,11 @@ $(".btn-anterior").click(function(){
     tab_anterior.show();
 });
 
-$("#btn-corfirmar").click(function(){
+$("#btn-corfirmar").click(function(event){
     event.preventDefault();
+    let contraseña = $("#contraseña").val();
+    let nombre = $("#nombre").val();
+    let apellido = $("#apellido").val();
     generatePDF(nombre, apellido, email);
     alert("Formulario enviado correctamente");
 });
